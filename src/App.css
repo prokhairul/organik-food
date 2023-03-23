@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Yellowtail&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Responsive Breakpoints  */
+@media only screen and (min-width: 320px) and (max-width: 767px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Custom Css Variable  */
+
+.btn-dark-slate {
+  @apply font-[roboto] font-[700] text-[20px] text-[#FFFFFF] leading-[23px] px-[39px] py-[28px] rounded-[16px] bg-[#274C5B] !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-yellow {
+  @apply font-[roboto] font-[700] text-[20px] text-[#274C5B] leading-[23px] px-6 py-5 md:px-[39px] md:py-[28px] rounded-[16px] bg-[#EFD372] !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-yellow:hover {
+  @apply font-[roboto] font-[700] text-[20px] text-[#FFF] leading-[23px] px-6 py-5 md:px-[39px] md:py-[28px] rounded-[16px] bg-[#274C5B] transition duration-500 ease-in-out !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-border-only {
+  @apply font-[roboto] font-[700] text-[20px] text-[#274C5B] leading-[23px] px-[39px] py-[28px] border-[1px] border-[#274C5B] rounded-[16px] bg-[#ffffff] !important;
 }
